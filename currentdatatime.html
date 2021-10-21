@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function task()
+{
+	var dt=new Date();
+	var sp1=document.getElementById("sp");
+	var x=dt.getDate()+"/"+(dt.getMonth()+1)+"/"+dt.getFullYear();
+	var t=dt.getHours()+":"+dt.getMinutes()+":"+dt.getSeconds();
+	sp1.innerHTML="Date is : "+x+ "  and Time is : "+t;
+	sp1.style.cssText="color:red;margin:20%;background:black;font-size:40px;color:white;font-style:italic;"
+}
+</script>
+</head>
+<body>
+<input type="button" id="btn" value="GetCurrent" onclick="task()"/><br/><br/>
+<span id="sp"></span>
+</body>
+</html>
